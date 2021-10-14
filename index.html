@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Password Generator</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Password Generator</h1>
+		</header>
+		<main>
+			<div class="pg_wrapper">
+				<!-- result Wrapper -->
+				<div class="result_wrapper">
+					<p id="resultSpan" class="result_span">
+						Press the Generator Button
+					</p>
+					<br />
+					<button id="copyBtn" class="copy_span">
+						Copy <br />
+						Password
+					</button>
+				</div>
+				<!-- end result wrapper -->
+				<!-- input settings wrapper -->
+				<div class="pg_settings_wrapper">
+					<div class="input_settings">
+						<label for="length">Select a Number</label>
+						<input
+							type="range"
+							min="8"
+							max="32"
+							id="rangeSelector"
+							value="8"
+						/>
+						<input
+							type="number"
+							min="8"
+							max="32"
+							id="numberSelctor"
+							value="8"
+						/>
+					</div>
+					<div class="input_settings">
+						<label for="lowercase">Include lowercase</label>
+						<input
+							type="checkbox"
+							id="includeLowercase"
+							checked
+							name="includeLowercase"
+						/>
+					</div>
+					<div class="input_settings">
+						<label for="uppercase">Include uppercase</label>
+						<input
+							type="checkbox"
+							id="includeUppercase"
+							checked
+							name="includeUppercase"
+						/>
+					</div>
+					<div class="input_settings">
+						<label for="numbers">Include numbers</label>
+						<input
+							type="checkbox"
+							id="includeNumbers"
+							checked
+							name="includeNumbers"
+						/>
+					</div>
+					<div class="input_settings">
+						<label for="symbols">Include symbols</label>
+						<input
+							type="checkbox"
+							id="includeSymbols"
+							checked
+							name="includeSymbols"
+						/>
+					</div>
+					<button class="pw-btn" id="generate">
+						generate Password <br />
+						Here
+					</button>
+				</div>
+			</div>
+		</main>
+		<footer>
+			&copy; Copyright 2021 N.M.C
+		</footer>
+	</body>
+</html>
